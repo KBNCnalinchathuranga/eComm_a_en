@@ -20,8 +20,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('login');
 });
- 
+
+Route::get('/logout', function () {
+   // Session::forget('user');
+
+    session()->forget('user');
+    return redirect('login');
+
+    //session()->get('user')['id']; 
+});
+
+
 Route::post("/login",[UserController:: class,'login']);
 
 //ProductController
 Route::get("/",[ProductController:: class,'index']);
+
+Route::get("detail/{id}",[ProductController:: class,'detail']);
+
+//addToCart
+
+Route::get("search",[ProductController:: class,'search']);
+Route::post("add_to_cart",[ProductController:: class,'addToCart']);
