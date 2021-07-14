@@ -1,0 +1,51 @@
+composer global require laravel/installer
+
+laravel new example-app
+
+cd example-app
+
+php artisan serve
+
+php artisan make:migration create_users_table
+
+php artisan make:seeder UsersSeeder
+
+php artisan db:seed --class UsersSeeder << hash passwrd User kenek create karanawa 
+
+//login//
+
+php artisan make:controller UserController
+
+
+php artisan make:controller ProductController
+
+php artisan make:controller ProductController
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+optional>> extention
+VS code < HTML5 Boilerplate
+
+Laravel Extra Intellisense
+https://devdojo.com/bobbyiliev/8-awesome-vs-code-extensions-for-laravel-developers
+
+
+https://getbootstrap.com/docs/3.3/getting-started/
+
+https://getbootstrap.com/docs/3.4/getting-started/
+
+
