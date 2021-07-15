@@ -95,7 +95,6 @@ second time push
 
 git add .
 git commit -m "logout and login done"
-image Link
 git push
 
 
