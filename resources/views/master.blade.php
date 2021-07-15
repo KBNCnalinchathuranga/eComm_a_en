@@ -24,7 +24,7 @@
 .custom-login{
 
     height: 500px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 img.slider-img{
 
@@ -57,6 +57,13 @@ img.slider-img{
     .detail-img{
 
         height: 200px;
+    }
+    .cart-list-devide{
+
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
     }
 
 </style>

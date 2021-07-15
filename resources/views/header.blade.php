@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class=""><a href="#">Orders</a></li>
+        <li class=""><a href="/myorders">Orders</a></li>
         
        
       </ul>
@@ -42,7 +42,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"> cart({{ $total }})</a></li>
+        <li><a href="/cartlist"> cart({{ $total }})</a></li>
 
         @if(Session::has('user'))
         <li class="dropdown">
@@ -55,6 +55,8 @@
         </li>
         @else
         <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        
         @endif
       </ul>
     </div><!-- /.navbar-collapse -->
